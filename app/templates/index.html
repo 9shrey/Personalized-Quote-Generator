@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Personalized Quote Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Quote Generator</h1>
+        <form method="POST">
+            <label for="problem">Describe your problem:</label>
+            <textarea id="problem" name="problem" rows="4" cols="50"></textarea>
+            <button type="submit">Generate Quote</button>
+        </form>
+    </div>
+</body>
+</html>

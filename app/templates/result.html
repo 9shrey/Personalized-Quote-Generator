@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Personalized Quote Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Quote Result</h1>
+        <p><strong>Your Problem:</strong> {{ problem }}</p>
+        <p><strong>Your Quote:</strong> {{ quote }}</p>
+        <a href="{{ url_for('chatbot.index') }}">Go Back</a>
+    </div>
+</body>
+</html>
